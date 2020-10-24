@@ -4,7 +4,7 @@ LABEL mainteiner="J. Andres Bergano <andresb39@gmail.com>"
 
 ADD ./cfg_files/supervisor.conf /etc/supervisord.conf
 ADD ./cfg_files/haproxy.cfg /etc/haproxy/haproxy.cfg
-ADD ./cfg_files/etcd.conf /etc/etcd/etcd.conf
+#ADD ./cfg_files/etcd.conf /etc/etcd/etcd.conf
 ADD ./cfg_files/cli /usr/bin/cli
 ADD ./cfg_files/start-standalone /etcd/
 ADD ./cfg_files/start-local-cluster /etcd/
