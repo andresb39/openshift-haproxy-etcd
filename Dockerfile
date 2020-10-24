@@ -1,6 +1,7 @@
 FROM andresb39/haproxycentos:v3
 
-RUN yum update -y && yum install -y supervisor
+RUN yum install -y epel-release
+RUN yum install -y supervisor
 
 ADD ./cfg_files/supervisor.conf /etc/myapp/supervisord.conf
 ADD ./cfg_files/cli /usr/bin/cli
