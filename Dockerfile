@@ -4,10 +4,10 @@ ADD ./cfg_files/cli /usr/bin/cli
 ADD ./cfg_files/haproxy.cfg /etc/haproxy/haproxy.cfg
 COPY licenses /licenses
 
-COPY ./cfg_filesstart-standalone /etcd/
+COPY ./cfg_files/start-standalone /etcd/
 RUN chmod +x /etcd/start-standalone
 
-COPY ./cfg_filesstart-local-cluster /etcd/
+COPY ./cfg_files/start-local-cluster /etcd/
 RUN chmod +x /etcd/start-local-cluster
 
 COPY ./cfg_files/etcd.conf /etc/etcd/etcd.conf
